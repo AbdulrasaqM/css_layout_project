@@ -1,0 +1,269 @@
+html {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-family: Roboto, Arial, sans-serif;
+    color: #747474;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* THE NAVIGATION BAR */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(100, 50%, 100%, 1);
+    box-shadow: 0 0 5px 0 #747467;
+    transition: box-shadow .25s ease 0s;
+}
+
+.inner-header {
+    padding: 0 20px;
+    max-width: 1015px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-docplanner {
+    width: 268px;
+    height: 33px;
+}
+
+.main-nav {
+    position: relative;
+    float: right;
+}
+
+.main-menu {
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 1.33em 0;
+}
+
+.main-header h1 {
+    margin: auto 0;
+    line-height: 68px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 5px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #747477;
+
+}
+
+nav ul li a:hover {
+    color: #00b39b
+}
+
+.dropdown-content {
+    display: none;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+    padding-top: 10px;
+    position: absolute;
+    min-width: 240px;
+    margin-left: -100px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 #747477;
+    z-index: 1;
+}
+
+
+
+
+/* THE MAIN PAGE  */
+.main_page {
+    padding: 0 20px;
+    max-width: 1015px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.divA {
+    margin-top: 120px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+
+}
+
+.divA1>img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    margin: auto;
+}
+
+.divA2 h1 {
+    color: #00b39b;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+.divA3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.divA3a,
+.divA3b {
+    padding: 10px;
+}
+
+
+.divB {
+    margin-top: 60px;
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.divB1 {
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+
+.divB1:nth-child(1) {
+    background-color: #00b39b;
+}
+
+.divB1:nth-child(2) {
+    background-color: #3d83df;
+}
+
+.divB1:nth-child(3) {
+    background-color: #1b2734;
+}
+
+.divB1a>h1 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.divB1a>h2 {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.divB1b {
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: .04em;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.divB1b select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    outline: 0;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+    background: inherit;
+    font: inherit;
+    margin: 0;
+    float: left;
+}
+
+.divC {
+    margin-top: 60px;
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.divC1 h1 {
+    float: left;
+    font-size: 1.625em;
+    margin: 0.25em 0 0.35em;
+    padding-right: 1em;
+    color: #00b39b;
+    font-weight: lighter;
+}
+
+.divC2 ul {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0;
+    list-style: none;
+}
+
+.divC2 ul li a {
+    text-decoration: none;
+    color: #747477;
+}
+
+.divC2 ul li a img {
+    transition: all .2s ease 0s;
+    filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    opacity: .55;
+}
+
+.divC2 ul li a img:hover {
+    filter: invert(88%) sepia(30%) saturate(5467%) hue-rotate(78deg) brightness(90%) contrast(94%);
+}
